@@ -3,10 +3,21 @@ public class ListaSimplismenteLigada {
 
     public ListaSimplismenteLigada(){ primeiro = null;}
 
-    public void inserirPrimeiro(int valor){
+    public void inserir(int valor){
         Nodo novo = new Nodo(valor);
-        novo.proximo = primeiro;
-        primeiro = novo;
+        Nodo anterior = null;
+        Nodo atual = primeiro;
+
+        while(atual != null && valor < atual.valor){
+            anterior = atual;
+            atual = atual.proximo;
+        }
+
+        if(anterior == null)
+            primeiro = novo;
+        else
+            anterior.proximo = novo;
+        novo.proximo = atual;
     }
 
     public void inserirSegundo(int valor){

@@ -13,6 +13,23 @@ public class ListaSimplismenteLigada {
         primeiro = novo;
     }
 
+    public void inserir(int valor){
+        Nodo1 novo = new Nodo1(valor);
+        Nodo1 anterior = null;
+        Nodo1 atual = primeiro;
+
+        while(atual != null && valor > atual.valor){
+            anterior = atual;
+            atual = atual.proximo;
+        }
+
+        if(anterior == null)
+            primeiro = novo;
+        else
+            anterior.proximo = novo;
+        novo.proximo = atual;
+    }
+
     public void inserirSegundo(int valor) {
         if (primeiro != null) {
             Nodo1 novo = new Nodo1(valor);

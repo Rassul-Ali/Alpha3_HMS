@@ -6,8 +6,8 @@ public class Main2 {
         //System.out.println("\n=== TESTE PROBLEMA DE JOSEFO ===");
         //testProblemaJosefo();
         
-        System.out.println("\n=== TESTE LISTA BIDIMENSIONAL SIMPLES ===");
-        testListaBidimensionalSimples();
+        //System.out.println("\n=== TESTE LISTA BIDIMENSIONAL SIMPLES ===");
+        //testListaBidimensionalSimples();
         
         //System.out.println("\n=== TESTE LISTA BIDIMENSIONAL DUPLA ===");
         //testListaBidimensionalDupla();
@@ -18,8 +18,8 @@ public class Main2 {
         //System.out.println("\n=== TESTE INTERCALAR LISTAS ===");
         //testIntercalarListas();
 
-        //System.out.println("\n=== TESTE FILAS COM PRIORIDADE ===");
-        //filasPrioridade();
+        System.out.println("\n=== TESTE FILAS COM PRIORIDADE ===");
+        filasPrioridade();
     }
     
     public static void testListaCircular() {
@@ -140,11 +140,10 @@ public class Main2 {
 
         filas.insert(80);
         filas.insert(50);
-        filas.insert(10);
+        filas.insert(1);
         filas.insert(350);
         filas.insert(100);
         
-        System.out.println(filas.size());
         System.out.println(filas.front());
         filas.remove();
         System.out.println(filas.front());

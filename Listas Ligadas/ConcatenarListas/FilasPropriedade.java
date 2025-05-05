@@ -17,7 +17,7 @@ public class FilasPropriedade {
     public int front(){ return array.retornaUltimo().valor; }
 
     public void insert(int valor){ 
-        array.inserirPrimeiro(valor);
+        array.inserir(valor);
     }
 
     public int remove(){
