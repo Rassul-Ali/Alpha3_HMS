@@ -9,8 +9,8 @@ public class Main2 {
         //System.out.println("\n=== TESTE LISTA BIDIMENSIONAL SIMPLES ===");
         //testListaBidimensionalSimples();
         
-        //System.out.println("\n=== TESTE LISTA BIDIMENSIONAL DUPLA ===");
-        //testListaBidimensionalDupla();
+        System.out.println("\n=== TESTE LISTA BIDIMENSIONAL DUPLA ===");
+        testListaBidimensionalDupla();
         
         //System.out.println("\n=== TESTE REMOVER MAIORES QUE VALOR ===");
         //testRemoverMaioresQue();
@@ -18,8 +18,8 @@ public class Main2 {
         //System.out.println("\n=== TESTE INTERCALAR LISTAS ===");
         //testIntercalarListas();
 
-        System.out.println("\n=== TESTE FILAS COM PRIORIDADE ===");
-        filasPrioridade();
+        //System.out.println("\n=== TESTE FILAS COM PRIORIDADE ===");
+        //filasPrioridade();
     }
     
     public static void testListaCircular() {
@@ -56,7 +56,7 @@ public class Main2 {
         System.out.println("Preenchendo matriz 3x4:");
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 4; j++) {
-                matriz.setValor(i, j, i * 10 + j);
+                matriz.setValor(i, j, (i * 10 + j)+1);
             }
         }
         
@@ -72,16 +72,16 @@ public class Main2 {
     public static void testListaBidimensionalDupla() {
         ListaBidimensionalDupla matriz = new ListaBidimensionalDupla(3, 3);
         
-        System.out.println("Preenchendo matriz 2x3:");
+        System.out.println("Preenchendo matriz 3x3:");
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < 4; j++) {
                 matriz.setValor(i, j, (i + 1) * 100 + (j + 1));
             }
         }
         
         System.out.println("Matriz:");
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < 4; j++) {
                 System.out.print(matriz.getValor(i, j) + "\t");
             }
             System.out.println();

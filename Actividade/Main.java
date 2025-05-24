@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-        /*Lista lista1 = new Lista();
+        Lista lista1 = new Lista();
         lista1.inserir('a');
         lista1.inserir('b');
         lista1.inserir('c');
@@ -23,10 +23,10 @@ public class Main {
         System.out.println("Lista 1' depois:");
         lista1.imprimir();
         System.out.println("Lista 2' depois:");
-        lista2.imprimir();*/
+        lista2.imprimir();
 
-        //ProblemaJosefo problemaJosefo = new ProblemaJosefo();
+        ProblemaJosefo problemaJosefo = new ProblemaJosefo();
 
-        //problemaJosefo.resolver(20, 6, 1);
+        problemaJosefo.resolver(20, 5, 1);
     }
 }
